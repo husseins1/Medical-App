@@ -2,7 +2,8 @@ import { useNavigation } from "@react-navigation/native";
 import { useLayoutEffect } from "react";
 import { View, Text, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Icon from "./Icon";
+import Banner from "../components/Banner";
+
 
 export default function Home() {
   const navigation = useNavigation();
@@ -24,8 +25,10 @@ export default function Home() {
           />
           
         </View>
-        <View className="h-10 w-10">
-      <Icon  />
+        <View className="mx-4 grid flex-row ">
+          <Banner style="mr-2" />
+          <Banner  />
+      
 
         </View>
    
