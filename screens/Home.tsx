@@ -3,8 +3,9 @@ import { useLayoutEffect } from "react";
 import { View, Text, Image } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import Banner from "../components/Banner";
-
-
+import {colorScheme} from '../types/styleTypes'
+import CrossIcon from '../components/CrossIcon'
+import HomeIcon from '../components/HomeIcon'
 export default function Home() {
   const navigation = useNavigation();
   useLayoutEffect(() => {
@@ -26,8 +27,12 @@ export default function Home() {
           
         </View>
         <View className="mx-4 grid flex-row ">
-          <Banner style="mr-2" />
-          <Banner  />
+        <Banner title={"Clinc Visit"} subtitle={"Make an appointment"} appearance={colorScheme.PRIMARY} style="mr-2"  >
+          <CrossIcon fill="#7266D7" />
+          </Banner>
+          <Banner title={"Home Visit"} subtitle={"Call the doctor home"} appearance={colorScheme.SECONDARY}   >
+            <HomeIcon fill='#7266d7' />
+          </Banner>
       
 
         </View>

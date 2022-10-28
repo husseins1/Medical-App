@@ -3,8 +3,8 @@ import Svg, { SvgProps, Rect } from "react-native-svg"
 
 const SvgComponent = ({fill}:{fill?:string}) => (
   <Svg
-    width={30}
-    height={30}
+    width={24}
+    height={24}
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 68 68"
